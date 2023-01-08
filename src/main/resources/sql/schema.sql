@@ -6,6 +6,6 @@ CREATE TABLE IF NOT EXISTS journeys (
     departureStationName VARCHAR(64) NOT NULL,
     returnStationId INT NOT NULL,
     returnStationName VARCHAR(64) NOT NULL,
-    distance INT NOT NULL,
-    duration INT NOT NULL
+    distance DECIMAL NOT NULL,
+    duration DECIMAL NOT NULL
 );
