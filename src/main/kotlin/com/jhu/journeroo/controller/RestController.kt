@@ -4,11 +4,13 @@ import com.jhu.journeroo.repository.JourneyRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.domain.PageRequest
 import org.springframework.data.domain.Sort
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
+@CrossOrigin(origins = ["https://jhu-journeroo-frontend.fly.dev", "http://localhost:3000"])
 class JourneyResource {
     @Autowired
     lateinit var journeyRepository: JourneyRepository
